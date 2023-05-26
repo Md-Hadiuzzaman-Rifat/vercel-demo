@@ -59,6 +59,10 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
       run().catch(console.dir);
   })
 
+  app.get("/poth",(req,res)=>{
+    res.send("Amar Poth Chola, Amar Pothe.")
+  })
+
 
 app.get('/',(req,res)=>{
     res.send("Hello World.")
